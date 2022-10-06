@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="120dip"
+        android:layout_height="80dip"
+        android:text="Hello World"
+        android:background="#A5A5A5"
+        android:gravity = "center_horizontal|center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/texttualize"
+        />
+
+    <EditText
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/texttualize"
+        android:layout_alignRight="@id/texttualize"
+        android:inputType="number"
+        android:id="@+id/numbereditor"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="@id/numbereditor"
+        android:layout_alignTop="@id/numbereditor"
+/>
+
+    <Button
+        android:id="@+id/bntA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button A"
+        />
+
+    <Button
+        android:id="@+id/btnB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button B"
+        android:layout_below="@id/bntA"
+         />
+
+    <Button
+        android:id="@+id/Make_Toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="bread"
+        android:text="make Toast"
+        android:layout_below="@id/btnB"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Up"
+        android:id="@+id/bntIncrement"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:onClick="Counters"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/btnReset"
+        android:layout_alignParentRight ="true"
+        android:onClick="Counters"
+        android:layout_below="@id/bntIncrement"
+        />
+    <TextView
+        android:layout_width="40dip"
+        android:layout_height="30dip"
+        android:layout_alignParentRight ="true"
+        android:layout_below = "@id/btnReset"
+        android:id="@+id/CounterText"
+        />
+
+
+</RelativeLayout>
